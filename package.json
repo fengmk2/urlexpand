@@ -1,0 +1,35 @@
+{
+  "name": "urlexpand",
+  "version": "0.0.1",
+  "description": "Expand the shorten url, handle all the 30x http redirect and get the original url.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "dependencies": {
+    "charset": ">=0.0.1",
+    "iconv-lite": ">=0.2.5"
+  },
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fengmk2/urlexpand.git"
+  },
+  "keywords": [
+    "shorten",
+    "url",
+    "expand",
+    "t.cn",
+    "url.cn",
+    "t.co",
+    "bit.ly"
+  ],
+  "author": "fengmk2 <fengmk2@gmail.com>",
+  "license": "MIT"
+}

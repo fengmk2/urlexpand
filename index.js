@@ -1,0 +1,1 @@
+module.exports = process.env.URLEXPAND_COV ? require('./lib-cov/expand') : require('./lib/expand');
