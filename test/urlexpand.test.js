@@ -77,19 +77,19 @@ describe('urlexpand.test.js', function () {
   });
 
   it('should redirect 2, get the last url and title', function (done) {
-    urlexpand('http://url.cn/8pBPLK', function (err, data) {
+    urlexpand('http://163.fm/K8dK4c8', function (err, data) {
       should.not.exist(err);
       should.exist(data);
-      data.should.have.property('url', 'http://instagram.com/p/QhLtWhB_A1/');
+      data.should.have.property('url', 'http://www.geekpark.net/read/view/164281');
       data.should.have.property('count', 2);
-      data.should.have.property('title', 'Photo by sofishlin &bull; Instagram');
+      data.should.have.property('title', '七大国内“生产力”社区网站 | 极客公园');
       data.should.have.property('tracks').with.length(3);
       data.tracks[0].should.have.property('statusCode', 302);
-      data.tracks[0].should.have.property('url', 'http://url.cn/8pBPLK');
-      data.tracks[1].should.have.property('statusCode', 301);
-      data.tracks[1].should.have.property('url', 'http://instagr.am/p/QhLtWhB_A1/');
+      data.tracks[0].should.have.property('url', 'http://163.fm/K8dK4c8');
+      data.tracks[1].should.have.property('statusCode', 302);
+      data.tracks[1].should.have.property('url', 'http://t.cn/zlVT0Af');
       data.tracks[2].should.have.property('statusCode', 200);
-      data.tracks[2].should.have.property('url', 'http://instagram.com/p/QhLtWhB_A1/');
+      data.tracks[2].should.have.property('url', 'http://www.geekpark.net/read/view/164281');
       done();
     });
   });
