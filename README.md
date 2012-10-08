@@ -1,6 +1,8 @@
 urlexpand [![Build Status](https://secure.travis-ci.org/fengmk2/urlexpand.png)](http://travis-ci.org/fengmk2/urlexpand)
 =========
 
+![logo](https://raw.github.com/fengmk2/urlexpand/master/logo.png)
+
 Expand the shorten url, handle all the 30x http redirect, get the original url and html page title.
 
 jscoverage: [91%](http://fengmk2.github.com/coverage/urlexpand.html) on nodejs 0.6.x.
